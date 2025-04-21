@@ -18,4 +18,11 @@ pipeline {
             }
         }
     }
+} post {
+    success {
+        echo 'Build finalizado correctamente.'
+    }
+    failure {
+        echo 'Algo falló. Revisar etapas.'
+    }
 }
